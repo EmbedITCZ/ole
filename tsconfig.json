@@ -22,10 +22,10 @@
     }
   },
   "include": [
-    "src",
+    "src"
     // @TODO this doesn't exist -> fill bug on stencil
-    "types/jsx.d.ts",
-    "custom-types"
+    // "types/jsx.d.ts",
+    // "custom-types"
   ],
   "exclude": ["node_modules"]
 }

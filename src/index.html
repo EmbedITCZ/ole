@@ -5,13 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>OLE - Homecredit international webcomponents kit</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="/build/ole.js"></script>
 </head>
 
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-  <ole-button>bla</ole-button>
+  <ole-navbar>
+    <ole-navbar-item>
+      <img slot="title" src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
+        height="28">
+    </ole-navbar-item>
+    <ole-navbar-item>
+      <ole-icon type="github" style="color: #333;"></ole-icon>
+    </ole-navbar-item>
+    <ole-navbar-item slot="navbar-start" href="/documentation/overview/start/">
+      Docs
+    </ole-navbar-item>
+    <ole-navbar-item slot="navbar-start" href="/documentation/overview/modifiers/syntax/">
+      Modifiers
+    </ole-navbar-item>
+  </ole-navbar>
+
+  <main>
+    <ole-button>Hello</ole-button>
+  </main>
 
 </body>
 
