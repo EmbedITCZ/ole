@@ -4,6 +4,35 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
+import { OleBox as OleBox } from './components/box/box';
+
+interface HTMLOleBoxElement extends OleBox, HTMLElement {
+}
+declare var HTMLOleBoxElement: {
+  prototype: HTMLOleBoxElement;
+  new (): HTMLOleBoxElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-box": HTMLOleBoxElement;
+  }
+  interface ElementTagNameMap {
+      "ole-box": HTMLOleBoxElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-box": JSXElements.OleBoxAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleBoxAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
 import { MdButton as OleButton } from './components/button/button';
 
 interface HTMLOleButtonElement extends OleButton, HTMLElement {
