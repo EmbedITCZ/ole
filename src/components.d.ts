@@ -33,7 +33,7 @@ declare global {
   }
 }
 
-import { MdButton as OleButton } from './components/button/button';
+import { OleButton as OleButton } from './components/button/button';
 
 interface HTMLOleButtonElement extends OleButton, HTMLElement {
 }
@@ -58,6 +58,16 @@ declare global {
           mode?: string,
           color?: string,
         
+          type?: string,
+          value?: string,
+          disabled?: boolean,
+          size?: string,
+          outlined?: boolean,
+          inverted?: boolean,
+          hovered?: boolean,
+          focused?: boolean,
+          active?: boolean,
+          loading?: boolean
       }
   }
 }
@@ -237,6 +247,186 @@ declare global {
           mode?: string,
           color?: string,
         
+      }
+  }
+}
+
+import { OlePaginationEllipsis as OlePaginationEllipsis } from './components/pagination/pagination-ellipsis';
+
+interface HTMLOlePaginationEllipsisElement extends OlePaginationEllipsis, HTMLElement {
+}
+declare var HTMLOlePaginationEllipsisElement: {
+  prototype: HTMLOlePaginationEllipsisElement;
+  new (): HTMLOlePaginationEllipsisElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination-ellipsis": HTMLOlePaginationEllipsisElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination-ellipsis": HTMLOlePaginationEllipsisElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination-ellipsis": JSXElements.OlePaginationEllipsisAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationEllipsisAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
+import { OlePaginationLink as OlePaginationLink } from './components/pagination/pagination-link';
+
+interface HTMLOlePaginationLinkElement extends OlePaginationLink, HTMLElement {
+}
+declare var HTMLOlePaginationLinkElement: {
+  prototype: HTMLOlePaginationLinkElement;
+  new (): HTMLOlePaginationLinkElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination-link": HTMLOlePaginationLinkElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination-link": HTMLOlePaginationLinkElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination-link": JSXElements.OlePaginationLinkAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationLinkAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          href?: string,
+          label?: string,
+          current?: boolean
+      }
+  }
+}
+
+import { OlePaginationList as OlePaginationList } from './components/pagination/pagination-list';
+
+interface HTMLOlePaginationListElement extends OlePaginationList, HTMLElement {
+}
+declare var HTMLOlePaginationListElement: {
+  prototype: HTMLOlePaginationListElement;
+  new (): HTMLOlePaginationListElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination-list": HTMLOlePaginationListElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination-list": HTMLOlePaginationListElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination-list": JSXElements.OlePaginationListAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationListAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
+import { OlePaginationNext as OlePaginationNext } from './components/pagination/pagination-next';
+
+interface HTMLOlePaginationNextElement extends OlePaginationNext, HTMLElement {
+}
+declare var HTMLOlePaginationNextElement: {
+  prototype: HTMLOlePaginationNextElement;
+  new (): HTMLOlePaginationNextElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination-next": HTMLOlePaginationNextElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination-next": HTMLOlePaginationNextElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination-next": JSXElements.OlePaginationNextAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationNextAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          href?: string
+      }
+  }
+}
+
+import { OlePaginationPrevious as OlePaginationPrevious } from './components/pagination/pagination-previous';
+
+interface HTMLOlePaginationPreviousElement extends OlePaginationPrevious, HTMLElement {
+}
+declare var HTMLOlePaginationPreviousElement: {
+  prototype: HTMLOlePaginationPreviousElement;
+  new (): HTMLOlePaginationPreviousElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination-previous": HTMLOlePaginationPreviousElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination-previous": HTMLOlePaginationPreviousElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination-previous": JSXElements.OlePaginationPreviousAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationPreviousAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          href?: string
+      }
+  }
+}
+
+import { OlePagination as OlePagination } from './components/pagination/pagination';
+
+interface HTMLOlePaginationElement extends OlePagination, HTMLElement {
+}
+declare var HTMLOlePaginationElement: {
+  prototype: HTMLOlePaginationElement;
+  new (): HTMLOlePaginationElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-pagination": HTMLOlePaginationElement;
+  }
+  interface ElementTagNameMap {
+      "ole-pagination": HTMLOlePaginationElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-pagination": JSXElements.OlePaginationAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OlePaginationAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          size?: string
       }
   }
 }
