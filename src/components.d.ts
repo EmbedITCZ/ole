@@ -4,6 +4,35 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
+import { MdButton as OleButton } from './components/button/button';
+
+interface HTMLOleButtonElement extends OleButton, HTMLElement {
+}
+declare var HTMLOleButtonElement: {
+  prototype: HTMLOleButtonElement;
+  new (): HTMLOleButtonElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-button": HTMLOleButtonElement;
+  }
+  interface ElementTagNameMap {
+      "ole-button": HTMLOleButtonElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-button": JSXElements.OleButtonAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleButtonAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
 import { MyComponent as MyComponent } from './components/my-component/my-component';
 
 interface HTMLMyComponentElement extends MyComponent, HTMLElement {
@@ -31,35 +60,6 @@ declare global {
         
           first?: string,
           last?: string
-      }
-  }
-}
-
-import { MdButton as OleButton } from './components/ole-button/ole-button';
-
-interface HTMLOleButtonElement extends OleButton, HTMLElement {
-}
-declare var HTMLOleButtonElement: {
-  prototype: HTMLOleButtonElement;
-  new (): HTMLOleButtonElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "ole-button": HTMLOleButtonElement;
-  }
-  interface ElementTagNameMap {
-      "ole-button": HTMLOleButtonElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "ole-button": JSXElements.OleButtonAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface OleButtonAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
       }
   }
 }

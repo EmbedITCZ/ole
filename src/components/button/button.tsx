@@ -3,7 +3,7 @@ import { MDCRipple } from '@material/ripple'
 
 @Component({
   tag: 'ole-button',
-  styleUrl: 'ole-button.scss',
+  styleUrl: 'button.scss',
   shadow: true,
 })
 export class MdButton {
