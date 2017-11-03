@@ -1,0 +1,53 @@
+{
+  "name": "my-name",
+  "version": "0.0.1",
+  "description": "OLE - Homecredit international webcomponents kit",
+  "main": "dist/collection/index.js",
+  "types": "dist/collection/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "browser": "dist/ole.js",
+  "scripts": {
+    "build": "stencil build",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"npm run serve\" ",
+    "serve": "stencil-dev-server --no-open",
+    "start": "npm run dev",
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
+  },
+  "dependencies": {
+    "@stencil/core": "0.0.7-0"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "0.0.18-0",
+    "@stencil/utils": "0.0.4",
+    "@types/jest": "21.1.5",
+    "jest": "21.2.1",
+    "typescript": "2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmbedITCZ/ole.git"
+  },
+  "author": "Ionic Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmbedITCZ/ole"
+  },
+  "homepage": "https://github.com/EmbedITCZ/ole",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
