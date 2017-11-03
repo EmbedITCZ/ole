@@ -2,7 +2,7 @@ import { Component, Prop } from "@stencil/core";
 
 @Component({
   tag: 'ole-column',
-  styleUrl: 'column.sass',
+  styleUrl: 'columns.sass',
   scoped: true
 })
 export class OleColumn {

@@ -62,7 +62,7 @@ declare global {
   }
 }
 
-import { OleColumn as OleColumn } from './components/column/column';
+import { OleColumn as OleColumn } from './components/columns/column';
 
 interface HTMLOleColumnElement extends OleColumn, HTMLElement {
 }
