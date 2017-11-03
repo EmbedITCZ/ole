@@ -33,34 +33,3 @@ declare global {
   }
 }
 
-import { MyComponent as MyComponent } from './components/my-component/my-component';
-
-interface HTMLMyComponentElement extends MyComponent, HTMLElement {
-}
-declare var HTMLMyComponentElement: {
-  prototype: HTMLMyComponentElement;
-  new (): HTMLMyComponentElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "my-component": HTMLMyComponentElement;
-  }
-  interface ElementTagNameMap {
-      "my-component": HTMLMyComponentElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "my-component": JSXElements.MyComponentAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface MyComponentAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          first?: string,
-          last?: string
-      }
-  }
-}
-
