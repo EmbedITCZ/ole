@@ -1,0 +1,7 @@
+@import 'bulma/sass/utilities/_all';
+@import 'bulma/sass/base/generic.sass';
+@import 'bulma/sass/components/navbar.sass';
+
+:host {
+  display: block;
+}

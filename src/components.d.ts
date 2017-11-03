@@ -152,6 +152,96 @@ declare global {
   }
 }
 
+import { Icon as OleIcon } from './components/icon/icon';
+
+interface HTMLOleIconElement extends OleIcon, HTMLElement {
+}
+declare var HTMLOleIconElement: {
+  prototype: HTMLOleIconElement;
+  new (): HTMLOleIconElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-icon": HTMLOleIconElement;
+  }
+  interface ElementTagNameMap {
+      "ole-icon": HTMLOleIconElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-icon": JSXElements.OleIconAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleIconAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          type?: string,
+          size?: any
+      }
+  }
+}
+
+import { NavbarItem as OleNavbarItem } from './components/navbar/navbar-item';
+
+interface HTMLOleNavbarItemElement extends OleNavbarItem, HTMLElement {
+}
+declare var HTMLOleNavbarItemElement: {
+  prototype: HTMLOleNavbarItemElement;
+  new (): HTMLOleNavbarItemElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-navbar-item": HTMLOleNavbarItemElement;
+  }
+  interface ElementTagNameMap {
+      "ole-navbar-item": HTMLOleNavbarItemElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-navbar-item": JSXElements.OleNavbarItemAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleNavbarItemAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          href?: string
+      }
+  }
+}
+
+import { Navbar as OleNavbar } from './components/navbar/navbar';
+
+interface HTMLOleNavbarElement extends OleNavbar, HTMLElement {
+}
+declare var HTMLOleNavbarElement: {
+  prototype: HTMLOleNavbarElement;
+  new (): HTMLOleNavbarElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-navbar": HTMLOleNavbarElement;
+  }
+  interface ElementTagNameMap {
+      "ole-navbar": HTMLOleNavbarElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-navbar": JSXElements.OleNavbarAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleNavbarAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
 import { OleSection as OleSection } from './components/section/section';
 
 interface HTMLOleSectionElement extends OleSection, HTMLElement {
