@@ -28,7 +28,7 @@ declare global {
       export interface OleBoxAttributes extends HTMLAttributes {
           mode?: string,
           color?: string,
-        
+
       }
   }
 }
@@ -57,7 +57,7 @@ declare global {
       export interface OleButtonAttributes extends HTMLAttributes {
           mode?: string,
           color?: string,
-        
+
       }
   }
 }

@@ -3,7 +3,7 @@ import { Component } from "@stencil/core";
 @Component({
   tag: 'ole-box',
   styleUrl: 'box.sass',
-  shadow: true
+  scoped: true
 })
 export class OleBox {
   render() {
