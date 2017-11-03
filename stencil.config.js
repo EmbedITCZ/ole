@@ -1,7 +1,9 @@
 exports.config = {
   namespace: 'ole',
   generateDistribution: true,
-  bundles: [{ components: ['my-component'], components: ['ole-button'] }],
+  bundles: [
+    { components: ['ole-button'] }
+  ],
   sassConfig: {
     includePaths: ['node_modules'],
   },
