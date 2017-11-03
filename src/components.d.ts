@@ -35,3 +35,32 @@ declare global {
   }
 }
 
+import { MdButton as OleButton } from './components/ole-button/ole-button';
+
+interface HTMLOleButtonElement extends OleButton, HTMLElement {
+}
+declare var HTMLOleButtonElement: {
+  prototype: HTMLOleButtonElement;
+  new (): HTMLOleButtonElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-button": HTMLOleButtonElement;
+  }
+  interface ElementTagNameMap {
+      "ole-button": HTMLOleButtonElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-button": JSXElements.OleButtonAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleButtonAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+

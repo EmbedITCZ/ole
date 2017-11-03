@@ -5,10 +5,7 @@
     "strict": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "lib": [
-      "dom",
-      "es2015"
-    ],
+    "lib": ["dom", "es2015"],
     "outDir": "ts-out",
     "moduleResolution": "node",
     "module": "es2015",
@@ -17,14 +14,19 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "sourceMap": true
+    "sourceMap": true,
+    "pretty": true,
+    "baseUrl": "./",
+    "typeRoots": ["custom-types", "node_modules/@types"],
+    "paths": {
+      "@material/*": ["custom-types/@material/*"]
+    }
   },
   "include": [
     "src",
     // @TODO this doesn't exist -> fill bug on stencil
-    "types/jsx.d.ts"
+    "types/jsx.d.ts",
+    "custom-types"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
