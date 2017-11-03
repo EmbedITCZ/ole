@@ -17,7 +17,6 @@
     "sourceMap": true,
     "pretty": true,
     "baseUrl": "./",
-    "typeRoots": ["custom-types", "node_modules/@types"],
     "paths": {
       "@material/*": ["custom-types/@material/*"]
     }
