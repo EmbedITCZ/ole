@@ -28,7 +28,7 @@ declare global {
       export interface OleBoxAttributes extends HTMLAttributes {
           mode?: string,
           color?: string,
-
+        
       }
   }
 }
@@ -57,7 +57,127 @@ declare global {
       export interface OleButtonAttributes extends HTMLAttributes {
           mode?: string,
           color?: string,
+        
+      }
+  }
+}
 
+import { OleColumn as OleColumn } from './components/column/column';
+
+interface HTMLOleColumnElement extends OleColumn, HTMLElement {
+}
+declare var HTMLOleColumnElement: {
+  prototype: HTMLOleColumnElement;
+  new (): HTMLOleColumnElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-column": HTMLOleColumnElement;
+  }
+  interface ElementTagNameMap {
+      "ole-column": HTMLOleColumnElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-column": JSXElements.OleColumnAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleColumnAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          size?: string
+      }
+  }
+}
+
+import { OleColumns as OleColumns } from './components/columns/columns';
+
+interface HTMLOleColumnsElement extends OleColumns, HTMLElement {
+}
+declare var HTMLOleColumnsElement: {
+  prototype: HTMLOleColumnsElement;
+  new (): HTMLOleColumnsElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-columns": HTMLOleColumnsElement;
+  }
+  interface ElementTagNameMap {
+      "ole-columns": HTMLOleColumnsElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-columns": JSXElements.OleColumnsAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleColumnsAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          size?: string
+      }
+  }
+}
+
+import { OleContainer as OleContainer } from './components/container/container';
+
+interface HTMLOleContainerElement extends OleContainer, HTMLElement {
+}
+declare var HTMLOleContainerElement: {
+  prototype: HTMLOleContainerElement;
+  new (): HTMLOleContainerElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-container": HTMLOleContainerElement;
+  }
+  interface ElementTagNameMap {
+      "ole-container": HTMLOleContainerElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-container": JSXElements.OleContainerAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleContainerAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          type?: string
+      }
+  }
+}
+
+import { OleSection as OleSection } from './components/section/section';
+
+interface HTMLOleSectionElement extends OleSection, HTMLElement {
+}
+declare var HTMLOleSectionElement: {
+  prototype: HTMLOleSectionElement;
+  new (): HTMLOleSectionElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-section": HTMLOleSectionElement;
+  }
+  interface ElementTagNameMap {
+      "ole-section": HTMLOleSectionElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-section": JSXElements.OleSectionAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleSectionAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          size?: string
       }
   }
 }
