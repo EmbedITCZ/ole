@@ -33,6 +33,38 @@ declare global {
   }
 }
 
+import { Icon as OleIcon } from './components/icon/icon';
+
+interface HTMLOleIconElement extends OleIcon, HTMLElement {
+}
+declare var HTMLOleIconElement: {
+  prototype: HTMLOleIconElement;
+  new (): HTMLOleIconElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-icon": HTMLOleIconElement;
+  }
+  interface ElementTagNameMap {
+      "ole-icon": HTMLOleIconElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-icon": JSXElements.OleIconAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleIconAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          type?: string,
+          inToolbar?: boolean,
+          inButton?: boolean
+      }
+  }
+}
+
 import { MyComponent as MyComponent } from './components/my-component/my-component';
 
 interface HTMLMyComponentElement extends MyComponent, HTMLElement {
@@ -60,6 +92,64 @@ declare global {
         
           first?: string,
           last?: string
+      }
+  }
+}
+
+import { Title as OleToolbarTitle } from './components/toolbar/title';
+
+interface HTMLOleToolbarTitleElement extends OleToolbarTitle, HTMLElement {
+}
+declare var HTMLOleToolbarTitleElement: {
+  prototype: HTMLOleToolbarTitleElement;
+  new (): HTMLOleToolbarTitleElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-toolbar-title": HTMLOleToolbarTitleElement;
+  }
+  interface ElementTagNameMap {
+      "ole-toolbar-title": HTMLOleToolbarTitleElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-toolbar-title": JSXElements.OleToolbarTitleAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleToolbarTitleAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
+import { Toolbar as OleToolbar } from './components/toolbar/toolbar';
+
+interface HTMLOleToolbarElement extends OleToolbar, HTMLElement {
+}
+declare var HTMLOleToolbarElement: {
+  prototype: HTMLOleToolbarElement;
+  new (): HTMLOleToolbarElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ole-toolbar": HTMLOleToolbarElement;
+  }
+  interface ElementTagNameMap {
+      "ole-toolbar": HTMLOleToolbarElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ole-toolbar": JSXElements.OleToolbarAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface OleToolbarAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
       }
   }
 }
