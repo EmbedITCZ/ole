@@ -1,22 +1,18 @@
-import { Component, Prop } from "@stencil/core";
-import { addStyles, cleanAttributes } from "../../helpers";
+import { Component, Prop } from '@stencil/core'
+import { addStyles, cleanAttributes } from '../../helpers'
 
 @Component({
   tag: 'ole-pagination-link',
-  styleUrl: 'pagination.sass',
-  scoped: true
+  styleUrl: 'pagination.scss',
+  scoped: true,
 })
 export class OlePaginationLink {
-
   @Prop() href: string
   @Prop() label: string
   @Prop() current: boolean
 
   render() {
-
-    const modifiers = [
-      this.current ? 'current' : undefined
-    ]
+    const modifiers = [this.current ? 'current' : undefined]
 
     const linkAttributes = cleanAttributes({
       href: this.href,
@@ -24,11 +20,8 @@ export class OlePaginationLink {
     })
 
     return (
-      <a
-        class={addStyles('pagination-link', modifiers)}
-        {...linkAttributes}
-      >
-        <slot/>
+      <a class={addStyles('pagination-link', modifiers)} {...linkAttributes}>
+        <slot />
       </a>
     )
   }

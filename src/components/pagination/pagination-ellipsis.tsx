@@ -1,14 +1,12 @@
-import { Component } from "@stencil/core";
+import { Component } from '@stencil/core'
 
 @Component({
   tag: 'ole-pagination-ellipsis',
-  styleUrl: 'pagination.sass',
-  scoped: true
+  styleUrl: 'pagination.scss',
+  scoped: true,
 })
 export class OlePaginationEllipsis {
   render() {
-    return (
-      <span class="pagination-ellipsis">&hellip;</span>
-    )
+    return <span class="pagination-ellipsis">&hellip;</span>
   }
 }

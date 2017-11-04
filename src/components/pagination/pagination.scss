@@ -1,0 +1,7 @@
+@import '../../helpers';
+@import 'bulma/sass/components/pagination';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
