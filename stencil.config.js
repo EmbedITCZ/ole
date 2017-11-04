@@ -5,6 +5,7 @@ exports.config = {
     { components: ['ole-box'] },
     { components: ['ole-columns', 'ole-column'] },
     { components: ['ole-container'] },
+    { components: ['ole-pagination', 'ole-pagination-ellipsis', 'ole-pagination-link', 'ole-pagination-list', 'ole-pagination-next', 'ole-pagination-previous'] },
     { components: ['ole-section'] },
     { components: ['ole-button'] },
     { components: ['ole-icon'] },
