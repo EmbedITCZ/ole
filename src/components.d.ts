@@ -208,7 +208,6 @@ declare global {
           mode?: string,
           color?: string,
         
-          href?: string
       }
   }
 }
