@@ -1,20 +1,19 @@
-import { Component, Prop } from '@stencil/core'
+import { Component } from '@stencil/core'
 
 @Component({
   tag: 'ole-navbar-item',
   styleUrl: 'navbar-item.scss',
   scoped: true,
   // host: {
-  // theme: 'alert',
+  //   theme: 'navbar-item',
   // },
 })
 export class NavbarItem {
-  @Prop() href: string
   render() {
     return (
-      <a class="navbar-item" href={this.href}>
+      <div class="navbar-item">
         <slot />
-      </a>
+      </div>
     )
   }
 }
